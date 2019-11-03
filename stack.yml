@@ -2,6 +2,7 @@ version: '3.1'
 services:
   db:
     image: postgres
+    restart: always
     volumes:
       - ./postgresql:/var/lib/postgresql
     ports:
@@ -12,6 +13,7 @@ services:
       POSTGRES_DB: postgres
   adm:
     image: dpage/pgadmin4
+    restart: always
     volumes:
       - ./pgadmin:/var/lib/pgadmin
 # - ./pgadmin:/var/lib/pgadmin/storage 
