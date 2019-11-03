@@ -16,7 +16,6 @@ services:
     restart: always
     volumes:
       - ./pgadmin:/var/lib/pgadmin
-# - ./pgadmin:/var/lib/pgadmin/storage 
     ports:
       - "80:80"
       - "443:443"
